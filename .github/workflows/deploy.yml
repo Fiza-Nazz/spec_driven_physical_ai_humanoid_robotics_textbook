@@ -1,0 +1,35 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # Adjust this to your main branch name
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Use the Node.js version specified in book-docs/package.json
+          cache: npm
+          cache-dependency-path: book-docs/package-lock.json # Or yarn.lock, pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./book-docs # Run npm install in the Docusaurus project directory
+
+      - name: Build Docusaurus website
+        run: npm run build
+        working-directory: ./book-docs # Run npm build in the Docusaurus project directory
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book-docs/build # Publish the built output from the Docusaurus project
+          # cname: example.com # Uncomment and replace with your custom domain if applicable

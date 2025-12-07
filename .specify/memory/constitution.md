@@ -1,56 +1,50 @@
-<!--
-Sync Impact Report:
-- Version change: 1.0.3 -> 1.0.4
-- List of modified principles:
-  - Development Workflow
-- Added sections: none
-- Removed sections: none
-- Templates requiring updates:
-  - ⚠ .specify/templates/plan-template.md
-  - ⚠ .specify/templates/spec-template.md
-  - ⚠ .specify/templates/tasks-template.md
-- Follow-up TODOs: none
+<!-- Sync Impact Report:
+Version change: 1.0.0 → 1.1.0
+Modified principles:
+  - Interdisciplinary Collaboration (new)
+  - Ethical AI Development (new)
+  - Robustness & Safety Engineering (new)
+  - Human-Robot Interaction Design (new)
+  - Continuous Learning & Adaptation (new)
+Added sections:
+  - Technical Standards
+  - Research & Development Workflow
+Removed sections:
+  - None
+Templates requiring updates:
+  - .specify/templates/plan-template.md (⚠ pending)
+  - .specify/templates/spec-template.md (⚠ pending)
+  - .specify/templates/tasks-template.md (⚠ pending)
+  - .specify/templates/commands/*.md (⚠ pending)
+Follow-up TODOs:
+  - None
 -->
-# Physical AI Humanoid Book
-
-## Version
-1.0.4
+# Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### I. Modularity and Reusability
-Code should be organized into independent, reusable modules with well-defined interfaces. This promotes separation of concerns and allows for easier maintenance and testing.
+### I. Interdisciplinary Collaboration
+This principle stresses the importance of collaboration across AI, robotics, biomechanics, cognitive science, and ethics. Successful development in Physical AI and Humanoid Robotics requires integrating diverse expertise to address complex challenges comprehensively.
 
-### II. Rigorous Testing
-All new code must be accompanied by a comprehensive suite of unit and integration tests. A Test-Driven Development (TDD) approach is strongly encouraged. All tests must pass before code is merged.
+### II. Ethical AI Development
+This principle highlights the necessity of ethical standards, human well-being, autonomy, privacy, fairness, bias detection, transparency, and accountability. All development must prioritize the responsible creation and deployment of AI systems, ensuring they serve humanity beneficially and justly.
 
-### III. Clear and Concise Documentation
-All modules, public APIs, and complex business logic must be clearly documented. Documentation should be kept up-to-date with any code changes.
+### III. Robustness & Safety Engineering
+This principle emphasizes engineering for extreme robustness, reliability, and safety in unpredictable environments, including rigorous risk assessment and testing. Physical AI systems must be designed to operate dependably and securely, minimizing risks to users and the environment.
 
-### IV. Version Control with Git
-All code changes must be tracked using Git. Commits should be atomic and accompanied by clear and descriptive messages that explain the "what" and "why" of the change.
+### IV. Human-Robot Interaction Design
+This principle focuses on intuitive, natural, and trustworthy human-robot interaction, considering psychological, social, and cultural factors. Designing for seamless and acceptable interaction is crucial for the successful integration of humanoid robotics into society.
 
-### V. Code Style and Linting
-A consistent code style must be enforced using automated linting tools. This ensures readability and maintainability of the codebase. Project-specific style guides will be defined and checked in CI.
+### V. Continuous Learning & Adaptation
+This principle includes the concept of systems designed to continuously learn, adapt, and improve through real-world interaction. Physical AI systems must possess the capability to evolve their understanding and performance over time, responding to new data and experiences.
 
-### VI. Security & Integrity
-Ensure resources and code examples are safe, copyright-free, and reliable.
+## Technical Standards
+Development must leverage advanced simulation environments for testing and validation, along with robust hardware-software co-design principles to ensure optimal performance and integration of physical and digital components.
 
-### VII. Modular Snippets
-Exercises and code snippets must be modular and independent.
-
-## Technology Stack
-
-The technology stack will be decided and documented here. For now, it is open, but choices should align with the principles of this constitution.
-
-## Development Workflow
-
-The development workflow will follow GitFlow principles for content updates. Key practices include:
-- All changes must be submitted via Pull Requests.
-- Major updates require approval from a project lead before being merged.
+## Research & Development Workflow
+The workflow must be iterative and hypothesis-driven, encouraging rapid prototyping and experimentation. It should also include regular peer review and mechanisms for effective knowledge transfer across teams and disciplines.
 
 ## Governance
+This constitution supersedes all other practices. Amendments require thorough documentation, multi-stakeholder approval, and a clear migration plan. All development and operational practices must align with the core principles outlined herein. Compliance will be reviewed annually to ensure ongoing adherence to ethical, safety, and performance standards.
 
-This constitution is the guiding document for the project. Amendments require a formal proposal, review, and approval from the project leads. All development practices and decisions must align with these principles.
-
-**Version**: 1.0.4 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
+**Version**: 1.1.0 | **Ratified**: 2025-01-01 | **Last Amended**: 2025-11-28

@@ -12,92 +12,56 @@
  */
 const sidebars = {
   tutorialSidebar: [
+    'intro', // Direct link to the top-level intro.md
+
     {
       type: 'category',
-      label: 'Foundations & Concepts',
+      label: 'Core Chapters',
       link: {
         type: 'generated-index',
-        title: 'Foundations & Core Concepts',
-        description: 'Understand the fundamental principles of AI, Machine Learning, and Robotics.',
-        slug: '/category/foundations',
+        title: 'Core Humanoid Robotics Chapters',
+        description: 'Fundamental concepts and advanced topics in Humanoid Robotics.',
+        slug: '/category/core-chapters',
       },
       items: [
         'chapters/intro/index',
         'chapters/kinematics/index',
-        'chapters/robot-anatomy/index',
-        'chapters/control-systems/index',
-        'chapters/distributed-robot-systems/index', // New
-        'chapters/system-architecture-for-ai/index', // New
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Robot Perception & Intelligence',
-      link: {
-        type: 'generated-index',
-        title: 'Robot Perception & Intelligence',
-        description: 'Explore how robots sense their environment and process information.',
-        slug: '/category/perception',
-      },
-      items: [
         'chapters/sensing-perception/index',
-        'chapters/computer-vision/index',
-        'chapters/machine-learning-robotics/index',
-        'chapters/audio-signal-processing/index', // New
-        'chapters/speech-recognition-for-hri/index', // New
-        'chapters/sensor-fusion/index', // New
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Control & Autonomous Navigation',
-      link: {
-        type: 'generated-index',
-        title: 'Control & Autonomous Navigation',
-        description: 'Master the algorithms and techniques for robot control and movement.',
-        slug: '/category/control-navigation',
-      },
-      items: [
         'chapters/control-navigation/index',
-        'chapters/path-planning/index',
-        'chapters/locomotion/index',
-        'chapters/robot-task-planning/index', // New
-        'chapters/motion-control/index', // New
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Human-Robot Interaction',
-      link: {
-        type: 'generated-index',
-        title: 'Human-Robot Interaction',
-        description: 'Design intuitive and safe interactions between humans and humanoid robots.',
-        slug: '/category/hri',
-      },
-      items: [
         'chapters/hri/index',
-        'chapters/robot-safety/index',
-        'chapters/natural-language-processing/index',
-        'chapters/llms-in-hri/index', // New
-        'chapters/context-aware-interaction/index', // New
-        'chapters/ui-ux-for-robotics/index', // New
+        'chapters/advanced-future/index',
       ],
     },
     {
       type: 'category',
-      label: 'Advanced Topics & Future Trends',
+      label: 'Tutorial - Basics',
       link: {
         type: 'generated-index',
-        title: 'Advanced Topics & Future Trends',
-        description: 'Dive into cutting-edge research and the future of AI Robotics.',
-        slug: '/category/advanced',
+        title: 'Tutorial Basics',
+        description: 'Learn the basics of Docusaurus.',
+        slug: '/category/tutorial-basics',
       },
       items: [
-        'chapters/advanced-future/index',
-        'chapters/exoskeletons-prosthetics/index',
-        'chapters/swarm-robotics/index',
-        'chapters/generative-ai-for-robotics/index', // New
-        'chapters/robot-ethics-and-safety/index', // New
+        'tutorial-basics/congratulations',
+        'tutorial-basics/create-a-blog-post',
+        'tutorial-basics/create-a-document',
+        'tutorial-basics/create-a-page',
+        'tutorial-basics/deploy-your-site',
+        'tutorial-basics/markdown-features',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Tutorial - Extras',
+      link: {
+        type: 'generated-index',
+        title: 'Tutorial Extras',
+        description: 'Advanced Docusaurus features.',
+        slug: '/category/tutorial-extras',
+      },
+      items: [
+        'tutorial-extras/manage-docs-versions',
+        'tutorial-extras/translate-your-site',
       ],
     },
   ],

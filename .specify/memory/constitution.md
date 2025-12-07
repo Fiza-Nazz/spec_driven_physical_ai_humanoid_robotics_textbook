@@ -1,16 +1,20 @@
 <!--
 Sync Impact Report:
-- Version change: none -> 1.0.0
-- List of modified principles: none
-- Added sections: Core Principles, Technology Stack, Development Workflow, Governance
+- Version change: 1.0.3 -> 1.0.4
+- List of modified principles:
+  - Development Workflow
+- Added sections: none
 - Removed sections: none
 - Templates requiring updates:
-  - ✅ .specify/templates/plan-template.md
-  - ✅ .specify/templates/spec-template.md
-  - ✅ .specify/templates/tasks-template.md
+  - ⚠ .specify/templates/plan-template.md
+  - ⚠ .specify/templates/spec-template.md
+  - ⚠ .specify/templates/tasks-template.md
 - Follow-up TODOs: none
 -->
-# Humanoid Robotics Constitution
+# Physical AI Humanoid Book
+
+## Version
+1.0.4
 
 ## Core Principles
 
@@ -29,8 +33,11 @@ All code changes must be tracked using Git. Commits should be atomic and accompa
 ### V. Code Style and Linting
 A consistent code style must be enforced using automated linting tools. This ensures readability and maintainability of the codebase. Project-specific style guides will be defined and checked in CI.
 
-### VI. Security First
-Security is a primary consideration in all development. All code must be written with security best practices in mind, and dependencies should be regularly scanned for vulnerabilities.
+### VI. Security & Integrity
+Ensure resources and code examples are safe, copyright-free, and reliable.
+
+### VII. Modular Snippets
+Exercises and code snippets must be modular and independent.
 
 ## Technology Stack
 
@@ -38,10 +45,12 @@ The technology stack will be decided and documented here. For now, it is open, b
 
 ## Development Workflow
 
-The development workflow will follow GitFlow principles. All changes are to be submitted via Pull Requests and require at least one approval from a project lead before being merged.
+The development workflow will follow GitFlow principles for content updates. Key practices include:
+- All changes must be submitted via Pull Requests.
+- Major updates require approval from a project lead before being merged.
 
 ## Governance
 
 This constitution is the guiding document for the project. Amendments require a formal proposal, review, and approval from the project leads. All development practices and decisions must align with these principles.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
+**Version**: 1.0.4 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
